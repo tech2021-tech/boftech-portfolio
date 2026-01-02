@@ -1,6 +1,6 @@
 # Baye Ousseynou FALL — Réseaux & Sécurité | Virtualisation | Observabilité
 
-Portfolio de projets : réseau, sécurité, virtualisation et supervision.  
+Portfolio de projets (version anonymisée) : réseau, sécurité, virtualisation et supervision.  
 Objectif : fournir des **preuves** (architecture, rôle, résultats, démarche) plutôt qu’un discours.
 
 ## Highlights
@@ -10,11 +10,18 @@ Objectif : fournir des **preuves** (architecture, rôle, résultats, démarche) 
 - Projection : **~3 000 000 / an**
 
 ## Profil
-Ingénieur Réseaux & Sécurité (Bac+5), expérience en environnements critiques.  
-J’interviens sur la **disponibilité** (MCO/MCS), la **sécurité opérationnelle** (segmentation, contrôle d’accès, VPN, durcissement) et l’**observabilité** (logs, dashboards, KPIs).  
+Ingénieur Réseaux & Sécurité (Bac+5) en **environnement aéroportuaire/industriel**, avec une approche orientée **continuité de service**, **sécurité opérationnelle** et **mise en exploitation**.  
+J’interviens sur la conception et l’intégration d’architectures (segmentation, contrôle d’accès, VPN/firewall, services IP), ainsi que sur l’**observabilité** (logs, dashboards, KPIs) et la gestion d’incidents.  
 Programme : **MBA 2 – Management & Sécurité des Systèmes d’Information (MSSI)** (ISM).
 
-## Spécialités
+## What I bring (valeur apportée)
+- **Architecture & intégration** : conception de solutions robustes (redondance, cloisonnement, flux maîtrisés) et intégration avec l’existant.
+- **Sécurité pragmatique** : segmentation, politiques d’accès, durcissement, réduction de surface d’attaque, traçabilité.
+- **MCO/MCS** : approche orientée exploitation (procédures, runbooks, tests, plan de rollback, KPIs).
+- **Résolution d’incidents** : diagnostic rapide, priorisation, communication claire, stabilisation durable.
+- **Standardisation** : documentation et automatisation pour réduire les erreurs et la dépendance aux individus.
+
+## Domaines de compétences
 - Réseau : VLAN, routage, QoS, ACL, LAN/WAN/Wi-Fi
 - Sécurité : firewall/VPN, segmentation, durcissement, gestion d’incidents
 - Systèmes : Linux (Debian/Ubuntu), Windows Server (selon périmètre)
@@ -22,21 +29,12 @@ Programme : **MBA 2 – Management & Sécurité des Systèmes d’Information (M
 - Observabilité : ELK / Loki / Grafana (selon projet), dashboards, KPIs
 
 ## Projets (sélection)
-1) **Wi-Fi Voyageurs — Architecture & intégration (anonymisé)**  
-   Redondance (WAN/contrôleurs/DHCP/cœur), segmentation, intégration et mise en exploitation.  
-   📄 `projects/01-wifi-passagers/README.md`
-
-2) **SOC / Logs / Supervision — Pipeline & dashboards **  
-   Collecte → parsing/enrichissement → indexation → visualisation → alerting (selon périmètre).  
-   📄 `projects/02-soc-logs/README.md`
-
-3) **Automatisation — Backup & exploitation **  
-   Standardisation, réduction du risque opérationnel, runbooks et contrôles.  
-   📄 `projects/03-automation/README.md`
-
-4) **Virtualisation / HA — Design & opérations **  
-   Capacité, continuité, sauvegardes, PRA/PCA, exploitation.  
-   📄 `projects/04-virtualization-ha/README.md`
+| Projet | Rôle | Impact / Résultats | Docs |
+|---|---|---|---|
+| Wi-Fi Voyageurs — Architecture & intégration | Architecture, intégration, exploitation | 56 AP / 12 switches d’accès / ~9k utilisateurs/jour / ~3M/an (dimensionnement) | `projects/01-wifi-passagers/README.md` |
+| SOC / Logs / Supervision — Pipeline & dashboards | Pipeline logs, visualisation, exploitation | Collecte → parsing → indexation → dashboards (selon périmètre) | `projects/02-soc-logs/README.md` |
+| Automatisation — Backup & exploitation | Standardisation, scripts/playbooks, runbooks | Réduction du risque opérationnel, répétabilité, gains de temps | `projects/03-automation/README.md` |
+| Virtualisation / HA — Design & opérations | Design, exploitation, PRA/PCA | Disponibilité, capacité, sauvegarde, continuité | `projects/04-virtualization-ha/README.md` |
 
 ## Méthode de travail
 - Priorisation : **impact / risque / effort**
