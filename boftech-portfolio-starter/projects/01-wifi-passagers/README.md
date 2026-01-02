@@ -35,22 +35,26 @@ Le design repose sur une architecture redondée :
 
 > Le schéma détaillé est volontairement anonymisé (pas de noms internes, pas d’IPs réelles).
 
-### Diagramme (Mermaid – compatible GitHub)
-```mermaid
 flowchart LR
-  WAN1((WAN)) --> FW[Firewall / NAT / Policies]
-  WAN2((WAN)) --> FW
+  subgraph Edge
+    WAN1((WAN 1)) --> FW[Firewall - NAT - Policies];
+    WAN2((WAN 2)) --> FW;
+  end
 
-  FW --> CORE1[Core/Dist Switch A]
-  FW --> CORE2[Core/Dist Switch B]
+  subgraph Core_Distribution
+    FW --> CORE1[Core Dist Switch A];
+    FW --> CORE2[Core Dist Switch B];
+  end
 
-  DHCP1[DHCP Server A] --> CORE1
-  DHCP2[DHCP Server B] --> CORE2
+  subgraph Services
+    DHCP1[DHCP Server A] --> CORE1;
+    DHCP2[DHCP Server B] --> CORE2;
+    CTRL1[WiFi Controller A] --> CORE1;
+    CTRL2[WiFi Controller B] --> CORE2;
+  end
 
-  CTRL1[Wi-Fi Controller A] --> CORE1
-  CTRL2[Wi-Fi Controller B] --> CORE2
-
-  CORE1 --> ACCESS[Access Switches (x12)]
-  CORE2 --> ACCESS
-
-  ACCESS --> APS[APs (x56) & Clients]
+  subgraph Access_WiFi
+    CORE1 --> ACCESS[Access Switches x12];
+    CORE2 --> ACCESS;
+    ACCESS --> APS[APs x56 + Clients];
+  end
