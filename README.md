@@ -1,12 +1,18 @@
 # Baye Ousseynou FALL — Réseaux & Sécurité | Virtualisation | Observabilité
 
-Portfolio de projets (version anonymisée) : réseau, sécurité, virtualisation et supervision.  
+Portfolio de projets : réseau, sécurité, virtualisation et supervision.  
 Objectif : fournir des **preuves** (architecture, rôle, résultats, démarche) plutôt qu’un discours.
+
+## Highlights
+- Wi-Fi Voyageurs : **56 AP**
+- Accès : **12 switches d’accès**
+- Capacité cible : **~9 000 utilisateurs/jour**
+- Projection : **~3 000 000 / an**
 
 ## Profil
 Ingénieur Réseaux & Sécurité (Bac+5), expérience en environnements critiques.  
 J’interviens sur la **disponibilité** (MCO/MCS), la **sécurité opérationnelle** (segmentation, contrôle d’accès, VPN, durcissement) et l’**observabilité** (logs, dashboards, KPIs).  
-Je prépare un **MBA 2 – Management & Sécurité des Systèmes d’Information (MSSI)** (ISM).
+Programme : **MBA 2 – Management & Sécurité des Systèmes d’Information (MSSI)** (ISM).
 
 ## Spécialités
 - Réseau : VLAN, routage, QoS, ACL, LAN/WAN/Wi-Fi
@@ -17,26 +23,30 @@ Je prépare un **MBA 2 – Management & Sécurité des Systèmes d’Information
 
 ## Projets (sélection)
 1) **Wi-Fi Voyageurs — Architecture & intégration (anonymisé)**  
-   → Architecture, segmentation, sécurité, exploitation  
+   Redondance (WAN/contrôleurs/DHCP/cœur), segmentation, intégration et mise en exploitation.  
    📄 `projects/01-wifi-passagers/README.md`
 
-2) **SOC / Logs / Supervision — Pipeline & dashboards (anonymisé)**  
-   → Collecte, parsing, indexation, visualisations, alerting  
+2) **SOC / Logs / Supervision — Pipeline & dashboards **  
+   Collecte → parsing/enrichissement → indexation → visualisation → alerting (selon périmètre).  
    📄 `projects/02-soc-logs/README.md`
 
-3) **Automatisation — Backup & exploitation (anonymisé)**  
-   → Industrialisation, standardisation, réduction du risque opérationnel  
+3) **Automatisation — Backup & exploitation **  
+   Standardisation, réduction du risque opérationnel, runbooks et contrôles.  
    📄 `projects/03-automation/README.md`
 
-4) **Virtualisation / HA — Design & opérations (anonymisé)**  
-   → Capacité, disponibilité, sauvegarde, PRA/PCA  
+4) **Virtualisation / HA — Design & opérations **  
+   Capacité, continuité, sauvegardes, PRA/PCA, exploitation.  
    📄 `projects/04-virtualization-ha/README.md`
 
-## Méthode
-- Priorisation : impact / risque / effort
-- Sécurité : principe du moindre privilège, durcissement, traçabilité
-- Exploitation : documentation, procédures, indicateurs (KPI), retour d’expérience
+## Méthode de travail
+- Priorisation : **impact / risque / effort**
+- Sécurité : **moindre privilège**, cloisonnement, traçabilité
+- Exploitation : documentation, procédures, indicateurs (KPI), REX
+
+## Confidentialité / anonymisation
+Les contenus sont volontairement **anonymisés** : pas d’IPs réelles, pas d’identifiants, pas de configurations sensibles, pas de logs bruts.  
+Checklist dédiée : `templates/PUBLIC_REDACTION_CHECKLIST.md`.
 
 ## Contact
 - Email : ousseynoufall1999@gmail.com  
-- Tel : +221 77 095 46 89
+- Tél. : +221 77 095 46 89
