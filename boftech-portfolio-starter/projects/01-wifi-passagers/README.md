@@ -34,27 +34,21 @@ Le design repose sur une architecture redondée :
 - **Accès** : **12 switches d’accès** alimentant **56 AP** et la distribution terrain.
 
 > Le schéma détaillé est volontairement anonymisé (pas de noms internes, pas d’IPs réelles).
-
 flowchart LR
-  subgraph Edge
-    WAN1((WAN 1)) --> FW[Firewall - NAT - Policies];
-    WAN2((WAN 2)) --> FW;
-  end
+  WAN1((WAN 1)) --> FW[Firewall - NAT - Policies];
+  WAN2((WAN 2)) --> FW;
 
-  subgraph Core_Distribution
-    FW --> CORE1[Core Dist Switch A];
-    FW --> CORE2[Core Dist Switch B];
-  end
+  FW --> CORE1[Core Dist Switch A];
+  FW --> CORE2[Core Dist Switch B];
 
-  subgraph Services
-    DHCP1[DHCP Server A] --> CORE1;
-    DHCP2[DHCP Server B] --> CORE2;
-    CTRL1[WiFi Controller A] --> CORE1;
-    CTRL2[WiFi Controller B] --> CORE2;
-  end
+  DHCP1[DHCP Server A] --> CORE1;
+  DHCP2[DHCP Server B] --> CORE2;
 
-  subgraph Access_WiFi
-    CORE1 --> ACCESS[Access Switches x12];
-    CORE2 --> ACCESS;
-    ACCESS --> APS[APs x56 + Clients];
-  end
+  CTRL1[WiFi Controller A] --> CORE1;
+  CTRL2[WiFi Controller B] --> CORE2;
+
+  CORE1 --> ACCESS[Access Switches x12];
+  CORE2 --> ACCESS;
+
+  ACCESS --> APS[APs x56 + Clients];
+
